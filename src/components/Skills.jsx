@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   const technologies = ['React', 'Docker', 'MongoDB', 'Node.js', 'Kubernetes'];
-  const additionalSkills = ['Full-Stack Development', 'Express', 'Linux', 'Database Management'];
+  const additionalSkills = ['Full-Stack Development', 'Express', 'Windows', 'Linux', 'Database Management'];
   const languages = ['JavaScript', 'C', 'Python'];
 
   const SkillTag = ({ skill }) => (

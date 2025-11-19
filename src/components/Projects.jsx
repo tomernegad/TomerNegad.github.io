@@ -6,28 +6,28 @@ const Projects = () => {
       title: 'BookStore App',
       description: 'A full-featured bookstore application with user authentication and book management.',
       link: 'https://github.com/tomernegad/BookStore-App',
-      image: 'https://raw.githubusercontent.com/tomernegad/BookStore-App/main/screenshot.png',
+      image: 'https://raw.githubusercontent.com/tomernegad/BookStore-App/main/frontend/images/bookslist.png',
       tech: ['React', 'Node.js', 'MongoDB']
     },
     {
       title: 'FoodApp',
       description: 'A food delivery app with real-time ordering and payment integration.',
       link: 'https://github.com/tomernegad/FoodApp',
-      image: 'https://raw.githubusercontent.com/tomernegad/FoodApp/main/screenshot.png',
+      image: 'https://raw.githubusercontent.com/tomernegad/FoodApp/main/frontend/public/pizza.png',
       tech: ['React', 'Express', 'MongoDB']
     },
     {
       title: 'Todo App',
       description: 'A simple yet powerful todo application with drag-and-drop functionality.',
       link: 'https://github.com/tomernegad/todoapp',
-      image: 'https://raw.githubusercontent.com/tomernegad/todoapp/main/screenshot.png',
+      image: 'https://raw.githubusercontent.com/tomernegad/todoapp/main/public/todo.png',
       tech: ['React', 'JavaScript']
     },
     {
       title: 'Booking App',
       description: 'A booking system for reservations with calendar integration.',
       link: 'https://github.com/tomernegad/BOOKINGAPP',
-      image: 'https://raw.githubusercontent.com/tomernegad/BOOKINGAPP/main/screenshot.png',
+      image: 'https://raw.githubusercontent.com/tomernegad/BOOKINGAPP/main/client/public/booking.png',
       tech: ['React', 'Node.js', 'Express']
     }
   ];
