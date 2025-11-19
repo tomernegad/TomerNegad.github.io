@@ -22,15 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-/* Neon glow effect */
+/* Accent colors */
 .neon-text {
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  color: #8b5cf6;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
 }
 
-.neon-border {
-  border: 2px solid #00ffff;
-  box-shadow: 0 0 10px #00ffff;
+.accent-border {
+  border: 2px solid #8b5cf6;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
 }
 
 /* Smooth scrolling */

@@ -11,15 +11,15 @@ const Hero = () => {
             opacity: [0.3, 0.6, 0.3]
           }}
           transition={{ duration: 8, repeat: Infinity }}
-          className="absolute top-20 left-20 w-72 h-72 bg-cyan-500 rounded-full blur-3xl"
+          className="absolute top-20 left-20 w-72 h-72 bg-purple-600 rounded-full blur-3xl opacity-20"
         />
         <motion.div
           animate={{
             y: [20, 0, 20],
-            opacity: [0.3, 0.5, 0.3]
+            opacity: [0.2, 0.3, 0.2]
           }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute bottom-20 right-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"
+          className="absolute bottom-20 right-20 w-72 h-72 bg-indigo-600 rounded-full blur-3xl opacity-20"
         />
       </div>
 
@@ -35,13 +35,14 @@ const Hero = () => {
           Passionate about creating innovative web applications with modern technologies.
           Building scalable solutions with React, Node.js, and more.
         </p>
-        <motion.button
+        <motion.a
+          href="#projects"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-3 border-2 border-cyan-400 rounded-lg text-lg font-semibold hover:bg-cyan-400 hover:text-black transition"
+          className="inline-block px-8 py-3 border-2 border-purple-500 rounded-lg text-lg font-semibold hover:bg-purple-500 hover:text-white transition"
         >
           View My Work
-        </motion.button>
+        </motion.a>
       </motion.div>
     </section>
   );

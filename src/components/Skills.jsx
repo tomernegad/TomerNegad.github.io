@@ -5,21 +5,16 @@ const Skills = () => {
   const additionalSkills = ['Full-Stack Development', 'Express', 'Linux', 'Database Management'];
   const languages = ['JavaScript', 'C', 'Python'];
 
-  const SkillBar = ({ skill, level }) => (
-    <div className="mb-4">
-      <div className="flex justify-between mb-2">
-        <span>{skill}</span>
-        <span>{level}%</span>
-      </div>
-      <div className="w-full bg-gray-700 rounded-full h-2">
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          transition={{ duration: 1 }}
-          className="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full"
-        ></motion.div>
-      </div>
-    </div>
+  const SkillTag = ({ skill }) => (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+      className="bg-gradient-to-r from-purple-600 to-indigo-600 px-4 py-3 rounded-lg text-center shadow-lg"
+    >
+      {skill}
+    </motion.div>
   );
 
   return (
@@ -39,30 +34,36 @@ const Skills = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Technologies</h3>
-            {technologies.map((tech, index) => (
-              <SkillBar key={tech} skill={tech} level={80 + index * 5} />
-            ))}
+            <h3 className="text-2xl font-semibold mb-6 text-center">Technologies</h3>
+            <div className="grid gap-3">
+              {technologies.map((tech) => (
+                <SkillTag key={tech} skill={tech} />
+              ))}
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Additional Skills</h3>
-            {additionalSkills.map((skill, index) => (
-              <SkillBar key={skill} skill={skill} level={75 + index * 5} />
-            ))}
+            <h3 className="text-2xl font-semibold mb-6 text-center">Additional Skills</h3>
+            <div className="grid gap-3">
+              {additionalSkills.map((skill) => (
+                <SkillTag key={skill} skill={skill} />
+              ))}
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h3 className="text-2xl font-semibold mb-6">Programming Languages</h3>
-            {languages.map((lang, index) => (
-              <SkillBar key={lang} skill={lang} level={85 + index * 5} />
-            ))}
+            <h3 className="text-2xl font-semibold mb-6 text-center">Programming Languages</h3>
+            <div className="grid gap-3">
+              {languages.map((lang) => (
+                <SkillTag key={lang} skill={lang} />
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
